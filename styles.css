@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.lovepik.com/photo/45000/2742.jpg_wh860.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    max-width: 800px;
+    background-color: rgba(169, 169, 169, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    display: none;
+}
+
+label,
+select,
+input {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}

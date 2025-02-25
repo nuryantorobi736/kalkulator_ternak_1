@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Penjualan Ternak</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="kalkulator" class="container">
+        <h1>Kalkulator Penjualan Ternak</h1>
+        <label for="tanggal">Tanggal:</label>
+        <input type="text" id="tanggal" readonly>
+
+        <label for="jenisTernak">Jenis Ternak:</label>
+        <select id="jenisTernak">
+            <option value="ayam">Ayam</option>
+            <option value="kambing">Kambing</option>
+            <option value="sapi">Sapi</option>
+        </select>
+
+        <label for="produkTernak">Produk Ternak:</label>
+        <select id="produkTernak">
+            <option value=""></option>
+            <option value="telur">Telur</option>
+            <option value="susu">Susu</option>
+            <option value="daging">Daging</option>
+            <option value="tulang">Tulang</option>
+            <option value="kulit">Kulit</option>
+            <option value="jeroan">Jeroan</option>
+        </select>
+
+        <label for="harga">Harga (Rp):</label>
+        <input type="number" id="harga" placeholder="Masukkan harga" required>
+
+        <label for="jumlah">Jumlah (per kg):</label>
+        <input type="number" id="jumlah" placeholder="Masukkan jumlah" required>
+
+        <button id="hitung">Hitung Total</button>
+        <div class="result" id="result"></div>
+
+        <button id="tambahProduk">Tambah ke Tabel Penjualan</button>
+    </div>
+
+    <div id="hasilPenjualan" class="container">
+        <h1>Hasil Penjualan Ternak</h1>
+        <table id="tabelPenjualan">
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Jenis Ternak</th>
+                    <th>Produk Ternak</th>
+                    <th>Harga (Rp)</th>
+                    <th>Jumlah (kg)</th>
+                    <th>Total (Rp)</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <button id="kembali">Kembali ke Kalkulator</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
